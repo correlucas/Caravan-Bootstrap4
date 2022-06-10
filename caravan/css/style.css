@@ -15,6 +15,14 @@ body {
   font-size: 1.8rem;
 }
 
+.lista-plano li+li {
+  border-top: 1px solid rgba(0, 0, 0, 0.118);
+}
+
+.lista-plano li {
+  padding: 1rem;
+}
+
 #home-quote {
   display: flex;
   align-items: center;

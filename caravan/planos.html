@@ -2,13 +2,13 @@
 <html>
 
 <head>
-  <title>Caravan - Local</title>
+  <title>Caravan - Planos</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -63,7 +63,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locais</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locais</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="local.html">California</a>
             <a class="dropdown-item" href="local.html">Paris</a>
@@ -71,7 +71,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="planos.html">Planos</a>
+          <a class="nav-link active" href="planos.html">Planos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contato.html">Contato</a>
@@ -86,76 +86,82 @@
     </div>
   </nav>
 
-  <!-- gallery -->
+  <!-- precos -->
 
-  <section class="py-5 bg-light text-center">
-    <div class="container">
-      <div class="my-5">
-        <span class="h6 d-block">O SEU MELHOR DESTINO</span>
-        <h2 class="display-4 text-primary">Descubra Dublin</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-md">
-          <img class="img-fluid mb-4" src="./img/local/foto-1.jpg" alt="">
-          <img class="img-fluid mb-4" src="./img/local/foto-2.jpg" alt="">
-          <img class="img-fluid mb-4" src="./img/local/foto-3.jpg" alt="">
-        </div>
-        <div class="col-md">
-          <img class="img-fluid mb-4" src="./img/local/foto-4.jpg" alt="">
-          <img class="img-fluid mb-4" src="./img/local/foto-5.jpg" alt="">
-        </div>
-        <div class="col-md">
-          <img class="img-fluid mb-4" src="./img/local/foto-6.jpg" alt="">
-          <img class="img-fluid mb-4" src="./img/local/foto-7.jpg" alt="">
-        </div>
-      </div>
+  <section class="container">
+    <div class="my-5">
+      <span class="h6 d-block">SEU PLANO, SUA VIAGEM</span>
+      <h2 class="display-4 text-primary">Escolha o Plano</h2>
     </div>
-
-
-    <!-- table -->
-    <section class="container">
-      <div class="my-5">
-        <span class="h6 d-block">DESCUBRA O QUE ACONTECE NA CIDADE</span>
-        <h2 class="display-4 text-primary">Próximos Eventos</h2>
+    <div class="row">
+      <div class="col">
+        <div class="bg-light rounded p-4 box-shadow">
+          <h2>Gold</h2>
+          <ul class="list-unstyled lista-plano">
+            <li>→ 30 dias de viagem</li>
+            <li>→ 3 destinos diferentes</li>
+            <li>→ Tudo pago pela empresa</li>
+            <li>→ Ingressos para festas</li>
+          </ul>
+          <form action="">
+            <div class="form-group">
+              <select class="form-control bg-light" id="inputCidades">
+                <option>Selecione a Cidade</option>
+                <option>Califórnia</option>
+                <option>Paris</option>
+                <option>Dublin</option>
+              </select>
+            </div>
+          </form>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <a href="inscricao.html" class="btn btn-primary btn-lg btn-block">Comprar Plano</a>
+            </div>
+            <div class="col">
+              <span class="h4 mt-4">R$ 5000</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <table class="table table-hover table-responsive-md">
-        <thead>
-          <tr>
-            <th scope="col">Data</th>
-            <th scope="col">Evento</th>
-            <th scope="col">Local</th>
-            <th scope="col">Ticket</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">03/10</th>
-            <td>Julien Baker</td>
-            <td>Opera Hall</td>
-            <td><a href="#" class="btn btn-outline-secondary">Compre Agora</a></td>
-          </tr>
-          <tr>
-            <th scope="row">17/10</th>
-            <td>Chet Faker</td>
-            <td>Opera Hall></td>
-            <td><a href="#" class="btn btn-outline-secondary">Compre Agora</a></td>
-          </tr>
-          <tr>
-            <th scope="row">23/12</th>
-            <td>Julien Baker</td>
-            <td>Opera Hall</td>
-            <td><a href="#" class="btn btn-outline-secondary">Compre Agora</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <div class="col">
+        <div class="bg-light rounded p-4 box-shadow">
+          <h2>Platinum<span class="badge badge-success">Novo</span></h2>
+          <ul class="list-unstyled lista-plano">
+            <li>→ 30 dias de viagem</li>
+            <li>→ 3 destinos diferentes</li>
+            <li>→ Tudo pago pela empresa</li>
+            <li>→ Ingressos para festas</li>
+          </ul>
+          <form action="">
+            <div class="form-group">
+              <select class="form-control bg-light" id="inputCidades">
+                <option>Selecione a Cidade</option>
+                <option>Califórnia</option>
+                <option>Paris</option>
+                <option>Dublin</option>
+              </select>
+            </div>
+          </form>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <a href="inscricao.html" class="btn btn-primary btn-lg btn-block">Comprar Plano</a>
+            </div>
+            <div class="col">
+              <span class="h4 mt-4">R$ 5000</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- footer -->
 
+
+      <!-- <h2>Platinum
+            <span class="badge badge-success">Novo</span>
+          </h2> -->
   </section>
 
-  <footer class="bg-dark text-white">
+
+  <footer class="bg-dark text-white mt-4">
     <div class="container py-4">
       <div class="row">
         <div class="col-md-3 col-6">
