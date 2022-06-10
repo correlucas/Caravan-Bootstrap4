@@ -3,23 +3,43 @@ body {
 }
 
 .box-shadow {
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
-              0 4px 8px 0 rgba(0,0,0,.05);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05),
+    0 4px 8px 0 rgba(0, 0, 0, .05);
+}
+
+.icone {
+  height: 100px;
+}
+
+.display-6 {
+  font-size: 1.8rem;
 }
 
 #home-quote {
-  background: url('../img/bg-quote.jpg') center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 40vh;
+  background: url(../img/bg-quote.jpg) center center;
   background-size: cover;
 }
 
 @media (max-width: 767px) {
-  #home-quote .display-4{
+  #home-quote .display-4 {
     font-size: 2.5rem;
   }
+
+  .display-6 {
+    font-size: 1rem;
+  }
+
+  /* 
   body {
     padding-top: 0px;
   }
+
   .fixed-top {
     position: relative;
-  }
+  } */
 }
